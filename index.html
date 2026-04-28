@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Top navigation bar -->
     <header class="site-header">
-      <nav class="nav container">
+      <nav class="nav container" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
@@ -18,71 +17,143 @@
     </header>
 
     <main>
-      <!-- Hero section: main title + subtitle -->
-      <section class="hero container">
-        <h1>Marketing Analytics &amp; Growth Operations Portfolio</h1>
-        <p>
-          A personal portfolio showcasing marketing analytics, e-commerce
-          strategy, and growth operations projects.
-        </p>
-        <button id="thankYouBtn" type="button">Say Hello</button>
+      <section class="hero section-surface">
+        <div class="container hero-content">
+          <p class="hero-eyebrow">Portfolio</p>
+          <h1>Marketing Analytics &amp; Growth Operations Portfolio</h1>
+          <p class="hero-subtitle">
+            Turning consumer behavior data into actionable growth, e-commerce,
+            and go-to-market strategies.
+          </p>
+          <button id="viewProjectsBtn" type="button">View Projects</button>
+        </div>
       </section>
 
-      <!-- About section -->
       <section id="about" class="section container">
         <h2>About</h2>
         <p>
-          I am interested in marketing analytics, user growth, e-commerce
-          operations, and go-to-market strategy.
+          I am a marketing-focused business student interested in marketing
+          analytics, user growth, e-commerce operations, and go-to-market
+          strategy. My projects combine consumer behavior analysis,
+          segmentation, pricing analytics, and business strategy to turn data
+          insights into practical marketing recommendations.
         </p>
       </section>
 
-      <!-- Projects section -->
       <section id="projects" class="section container">
         <h2>Projects</h2>
         <div class="cards">
           <article class="card">
             <h3>Instacart Consumer Behavior Analysis</h3>
-            <p><strong>Business Question:</strong> Which customer behaviors indicate repeat purchasing potential?</p>
-            <p><strong>Method:</strong> Cohort analysis, RFM segmentation, and basket trend exploration.</p>
-            <p><strong>Key Insight:</strong> Frequent small-basket shoppers had the strongest 30-day return rates.</p>
-            <p><strong>Business Implication:</strong> Personalized reminders and bundle suggestions can increase retention.</p>
+            <p>
+              <strong>Business Question:</strong> How can grocery platforms
+              identify repeat purchase opportunities and design more targeted
+              retention strategies?
+            </p>
+            <p>
+              <strong>Method:</strong> Analyzed ordering time patterns, repeat
+              purchase behavior, basket sequence, association rules, and
+              FRA-based customer segmentation.
+            </p>
+            <p>
+              <strong>Key Insight:</strong> Repeat purchase potential was linked
+              to shopping timing, product reorder behavior, and basket
+              position, allowing customers to be grouped into different
+              engagement segments.
+            </p>
+            <p>
+              <strong>Business Implication:</strong> Platforms can design
+              reminder campaigns, bundle promotions, and reactivation
+              strategies based on customer lifecycle and basket behavior.
+            </p>
           </article>
 
           <article class="card">
             <h3>Adidas Store Expansion Strategy</h3>
-            <p><strong>Business Question:</strong> Where should Adidas prioritize new store openings?</p>
-            <p><strong>Method:</strong> Market scoring using demographic data, competitor mapping, and sales potential modeling.</p>
-            <p><strong>Key Insight:</strong> Mid-size cities with high sports participation showed high untapped demand.</p>
-            <p><strong>Business Implication:</strong> Expansion into these markets can improve coverage with lower competitive pressure.</p>
+            <p>
+              <strong>Business Question:</strong> Where should Adidas prioritize
+              offline store expansion to improve profitability and brand
+              coverage?
+            </p>
+            <p>
+              <strong>Method:</strong> Built a city and channel analysis using
+              sales, profit, product category, and store performance
+              indicators, with a deeper comparison of in-store, online, and
+              outlet channels.
+            </p>
+            <p>
+              <strong>Key Insight:</strong> Expansion decisions should not rely
+              only on total sales; channel mix, product category strength, and
+              profitability reveal different market opportunities.
+            </p>
+            <p>
+              <strong>Business Implication:</strong> Adidas can prioritize
+              markets where offline stores strengthen premium positioning and
+              complement existing online or outlet performance.
+            </p>
           </article>
 
           <article class="card">
             <h3>Netflix Pricing &amp; Conjoint Analysis</h3>
-            <p><strong>Business Question:</strong> What pricing and feature bundles maximize subscription intent?</p>
-            <p><strong>Method:</strong> Conjoint survey analysis and willingness-to-pay estimation.</p>
-            <p><strong>Key Insight:</strong> Ad-free streaming and multi-device access drove the highest utility.</p>
-            <p><strong>Business Implication:</strong> Tiered pricing with clear feature differentiation can reduce churn risk.</p>
+            <p>
+              <strong>Business Question:</strong> How should Netflix design and
+              price an ad-supported subscription plan?
+            </p>
+            <p>
+              <strong>Method:</strong> Built a utility matrix, simulated market
+              share, estimated demand, and forecasted profit under different
+              pricing and advertising load scenarios.
+            </p>
+            <p>
+              <strong>Key Insight:</strong> Profitability depends not only on
+              subscription price, but also on advertising revenue, user
+              preference trade-offs, and feature bundle design.
+            </p>
+            <p>
+              <strong>Business Implication:</strong> A tiered pricing strategy
+              can balance user acquisition, retention, and monetization while
+              reducing the risk of cannibalizing existing plans.
+            </p>
           </article>
         </div>
       </section>
 
-      <!-- Skills section -->
       <section id="skills" class="section container">
         <h2>Skills</h2>
-        <div class="skill-tags">
-          <span>Marketing Analytics</span>
-          <span>SQL</span>
-          <span>R</span>
-          <span>Tableau</span>
-          <span>Growth Strategy</span>
-          <span>Campaign Analysis</span>
-          <span>User Segmentation</span>
-          <span>A/B Testing</span>
+        <div class="skills-grid">
+          <article class="skill-group">
+            <h3>Analytics</h3>
+            <ul>
+              <li>R</li>
+              <li>SQL</li>
+              <li>Tableau</li>
+              <li>Conjoint Analysis</li>
+              <li>Segmentation</li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3>Marketing</h3>
+            <ul>
+              <li>Consumer Behavior</li>
+              <li>Campaign Analysis</li>
+              <li>GTM Strategy</li>
+              <li>E-commerce Operations</li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3>Growth/Product</h3>
+            <ul>
+              <li>Funnel Analysis</li>
+              <li>A/B Testing</li>
+              <li>User Retention</li>
+              <li>Pricing Strategy</li>
+            </ul>
+          </article>
         </div>
       </section>
 
-      <!-- Contact section -->
       <section id="contact" class="section container">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:your.email@gmail.com">your.email@gmail.com</a></p>
