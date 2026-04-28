@@ -85,7 +85,8 @@ body {
   font-weight: 700;
 }
 
-.hero h1 {
+.hero h1,
+.project-page h1 {
   margin: 0;
   font-size: clamp(2rem, 5vw, 3.4rem);
   line-height: 1.2;
@@ -137,6 +138,25 @@ button:hover {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
 }
 
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.card-link:hover,
+.card-link:focus-visible {
+  transform: translateY(-3px);
+  border-color: #bcbcbc;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+}
+
+.card-link article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
 .card h3 {
   margin: 0.15rem 0 0.3rem;
   font-size: 1.1rem;
@@ -177,6 +197,48 @@ button:hover {
   margin-bottom: 0.35rem;
 }
 
+.project-page {
+  padding-top: 3rem;
+  max-width: 860px;
+}
+
+.project-lead {
+  margin: 1rem 0 2rem;
+  color: var(--text-secondary);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.2rem;
+  color: #1d1d1d;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.project-block {
+  border-top: 1px solid #e4e4e4;
+  padding: 1.35rem 0;
+}
+
+.project-block h2 {
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.project-block p,
+.project-block li {
+  color: #3a3a3a;
+}
+
+.project-block ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
 #contact {
   padding-bottom: 5rem;
 }
@@ -213,5 +275,9 @@ button:hover {
   .nav {
     gap: 0.85rem;
     padding: 0.9rem 0;
+  }
+
+  .project-page {
+    padding-top: 2rem;
   }
 }
