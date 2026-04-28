@@ -1,7 +1,8 @@
-// This script adds a click event to the button.
-// When users click it, a simple popup message appears.
-const thankYouBtn = document.getElementById('thankYouBtn');
+const viewProjectsBtn = document.getElementById('viewProjectsBtn');
+const projectSection = document.getElementById('projects');
 
-thankYouBtn.addEventListener('click', () => {
-  alert('Thanks for visiting!');
-});
+if (viewProjectsBtn && projectSection) {
+  viewProjectsBtn.addEventListener('click', () => {
+    projectSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+}
