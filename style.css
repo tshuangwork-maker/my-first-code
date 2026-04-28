@@ -1,0 +1,137 @@
+/* Basic page setup */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #ffffff;
+}
+
+.container {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
+
+/* Header and navigation */
+.site-header {
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  color: #000;
+}
+
+/* Hero section */
+.hero {
+  padding: 3rem 0 1.5rem;
+}
+
+.hero h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+}
+
+.hero p {
+  margin: 0 0 1.2rem;
+  max-width: 760px;
+  color: #555;
+}
+
+button {
+  border: 1px solid #222;
+  background-color: #222;
+  color: #fff;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: #000;
+}
+
+/* Generic section spacing */
+.section {
+  padding: 1.5rem 0;
+}
+
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Project card layout */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #fafafa;
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.05rem;
+}
+
+.card p {
+  margin: 0.5rem 0;
+  color: #444;
+}
+
+/* Skills tags */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skill-tags span {
+  border: 1px solid #cfcfcf;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  background-color: #f5f5f5;
+  font-size: 0.92rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    gap: 0.8rem;
+  }
+}
